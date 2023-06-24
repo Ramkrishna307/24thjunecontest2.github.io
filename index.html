@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="app">
+  
+    <div id="content">
+      <!-- Signup Page -->
+      <div id="signup" class="page">
+        <h1>Signup</h1>
+        <div id="signup-form">
+          <input type="text" id="name" placeholder="Name" required>
+          <br>
+
+          <input type="email" id="email" placeholder="Email" required>
+          <br>
+          <input type="password" id="password" placeholder="Password" required>
+          <br>
+          <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+          <br>
+          <button id="signup-btn">Signup</button>
+          <p id="signup-error" class="error"></p>
+          <p id="signup-success" class="success"></p>
+        </div>
+      </div>
+      
+      <!-- Profile Page -->
+      <div id="profile" class="page">
+        <div id="navbar">
+          <button id="signup-nav-btn">Signup</button>
+          <button id="profile-nav-btn">Profile</button>
+        </div>
+        <h2>Profile</h2>
+        <div id="profile-details">
+          <p>Name: <span id="profile-name"></span></p>
+          <p>Email: <span id="profile-email"></span></p>
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
